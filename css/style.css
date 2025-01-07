@@ -1,0 +1,70 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li,
+ul {
+  list-style: none;
+}
+
+/* 상단 */
+header {
+  width: 1200px;
+  height: 100px;
+  background-color: cornflowerblue;
+  color: #fff;
+  text-align: center;
+}
+/* 로고 */
+header h1 {
+  float: left;
+  background-color: antiquewhite;
+}
+/* 상단 카테고리 */
+header .container {
+  float: right;
+  text-align: center;
+  background-color: aquamarine;
+}
+.container li {
+  display: inline-block;
+  margin-right: 100px;
+  background-color: red;
+}
+/* 메인 이미지 */
+.img {
+  width: 1200px;
+  height: 300px;
+  background-color: blue;
+}
+/* 메인 섹션 */
+main {
+  width: 1200px;
+  height: 400px;
+  background-color: pink;
+}
+main h2 {
+  width: calc(100% / 2);
+  height: 20x;
+  background-color: aqua;
+  float: left;
+  padding: 10px 10px;
+}
+main .content {
+  width: 100%;
+  background-color: red;
+}
+main .content ul {
+  width: calc(100% / 2);
+  background-color: blue;
+}
+main .gallery-main {
+  width: calc(100% / 2);
+  background-color: orange;
+  float: right;
+}
+main .gallery-main ul {
+  display: inline-block;
+}
