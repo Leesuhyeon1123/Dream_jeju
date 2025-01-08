@@ -4,6 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
 li,
 ul {
   list-style: none;
@@ -11,6 +17,7 @@ ul {
 
 /* 상단 */
 header {
+  position: relative;
   width: 1200px;
   height: 100px;
   background-color: cornflowerblue;
@@ -19,19 +26,25 @@ header {
 }
 /* 로고 */
 header h1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
   float: left;
-  background-color: antiquewhite;
+  font-size: 50px;
 }
 /* 상단 카테고리 */
 header .container {
+  position: absolute;
+  bottom: 10px;
+  right: 40px;
   float: right;
   text-align: center;
-  background-color: aquamarine;
+  font-size: 20px;
+  font-weight: bold;
 }
 .container li {
   display: inline-block;
   margin-right: 100px;
-  background-color: red;
 }
 /* 메인 이미지 */
 .img {
@@ -43,28 +56,86 @@ header .container {
 main {
   width: 1200px;
   height: 400px;
-  background-color: pink;
+  /* background-color: pink; */
 }
-main h2 {
-  width: calc(100% / 2);
-  height: 20x;
-  background-color: aqua;
-  float: left;
-  padding: 10px 10px;
+.c_menu {
+  margin-top: 20px;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.c_menu > h2 {
+  padding: 20px;
+  /* background-color: aqua; */
+  margin: 0;
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #00000000;
+}
+.c_menu > h2:first-child {
+  color: brown;
+  background-color: gainsboro;
+}
+.c_menu > h2:last-child {
+  border-left: 1px solid #00000000;
+  color: gray;
+  border-right: none;
+  border-top: none;
 }
 main .content {
-  width: 100%;
-  background-color: red;
-}
-main .content ul {
   width: calc(100% / 2);
-  background-color: blue;
+  float: left;
 }
+.content ul {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+.content ul li {
+  margin-bottom: 20px;
+}
+/* 갤러리 영역 */
 main .gallery-main {
   width: calc(100% / 2);
-  background-color: orange;
   float: right;
 }
-main .gallery-main ul {
-  display: inline-block;
+.gallery-main div {
+  float: left;
+  margin: 85px 20px;
+}
+.gallery-main img {
+  border-radius: 50%;
+}
+.gallery-main p {
+  text-align: center;
+}
+footer {
+  width: 1200px;
+  height: 100px;
+  border-top: 1px solid black;
+}
+footer .footer_1 {
+  float: left;
+}
+.footer_1 .upper li {
+  float: left;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+.footer_1 .upper li:last-child {
+  border: none;
+}
+.text p {
+  margin: 20px 0 0 20px;
+  color: grey;
+}
+footer .icon {
+  padding-top: 40px;
+  float: right;
+}
+footer .icon p {
+  float: left;
+
+  margin-right: 10px;
 }
